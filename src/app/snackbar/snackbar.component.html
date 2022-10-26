@@ -1,0 +1,20 @@
+<div *ngIf="data.type=='success'" style="background-color: #65B511;padding: 15px 18px;border-radius: 10px">
+    <div class="snakbar-container  position-relative d-flex">
+        <div>
+            <div class="snack-bar-msg  b-body-16">
+                {{data.message}}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="data.type=='error'" style="background-color: #FF3162;padding: 15px 18px;border-radius: 10px;">
+    <div class="snakbar-container  position-relative d-flex">
+        <div>
+            <div class="snack-bar-msg  b-body-16">
+                {{data.message}}
+            </div>
+        </div>
+        
+    </div>
+</div>

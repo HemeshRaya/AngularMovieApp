@@ -1,0 +1,47 @@
+<div *ngIf="!isError" class="home">
+    <div class='header'>
+        <div class='trend'>
+            Movies List
+        </div>
+        <!-- <div className='searchDiv'>
+        <input
+          type="text"
+          name="text"
+          placeholder="search movies..."
+          onChange={this.handleChange}
+          className="bg-white p-2 w-3/4 outline-none searchbar"
+        />
+        <button type="submit" className="p-2 text-center w-1/4 searchbtn">
+        <Link to={`/searchMovie?txt=${this.state.text}`} >Search</Link> 
+        </button>
+      </div> -->
+    </div>
+    <div class='movies-section'>
+        <div *ngFor="let movie of moviesArr;let i=index" class='movie-card'>
+            <div (click)="movieData(movie)">
+                <div class='imgstyle'>
+                    <img [src]="movie.avatarUrl" alt="poster">
+                </div>
+                <label style="margin-bottom:5px"><b>{{movie.title}}</b></label>
+                <div style="height: 40px;overflow: hidden;">
+                    <p>{{movie.description}}</p>
+                </div>
+                <p>...</p>
+                <p><b>Genere: </b>{{movie.genres}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <button class="btn btn-primary btn-login text-uppercase previousPage" [disabled]="previous==null||pageNo<=1" type="submit"
+            (click)="previousPage()">Previous</button>
+        <p class="pagenum"><b>{{pageNo}}</b></p>
+        <button class="btn btn-primary btn-login text-uppercase nextPage" [disabled]="next==null" type="submit"
+            (click)="nextPage()">Next</button>
+    </div>
+</div>
+
+<div *ngIf="isError" class="errorPage">
+    <h2>Server Error!! Please ... Reload the page</h2>
+    <button class="btn btn-primary btn-login text-uppercase" type="submit"
+            (click)="realodPage()">Reload Page</button>
+</div>

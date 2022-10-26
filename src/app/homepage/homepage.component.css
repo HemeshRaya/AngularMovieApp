@@ -1,0 +1,93 @@
+.home{
+    padding-top: 25px;
+    background-image: url('../../assets/images/annie-spratt-0ZPSX_mQ3xI-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 100% 100vh;
+}
+
+.movies-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px darkgrey;
+    padding: 20px;
+    background-color: white;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.trend{
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.766);
+}
+
+.movie-card{
+    width: 225px;
+    height: 360px;
+    padding: 10px;
+    margin-bottom: 25px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 9px 2px darkgrey;
+    overflow: auto;
+    cursor: pointer;
+}
+
+.imgstyle{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    justify-content: center;
+    width: 70%;
+    height: 180px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.footer{
+    display: flex;
+    margin-top: 20px;
+    margin-right: 65px;
+    justify-content:flex-end;
+}
+
+.previousPage{
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+.nextPage{
+    margin-bottom: 50px;
+}
+
+.pagenum{
+    margin-right: 20px;
+    font-size: 20px;
+    padding-top: 8px;
+    text-align: center;
+    background-color: white;
+    width: 40px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+
+.errorPage{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

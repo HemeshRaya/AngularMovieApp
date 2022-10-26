@@ -1,0 +1,20 @@
+<div class="modal-header">
+    <h1 class="modal-title mb-0" id="exampleModalLabel">{{data.title}}</h1>
+    <button type="button" class="btn-close" aria-label="Close" (click)="modalRef.close()"></button>
+</div>
+<div class="modal-body">
+    <div class="imgstyle" style="display: flex; justify-content: center;">
+        <img [src]="data.avatarUrlSqr" alt="poster">
+    </div>
+    <div class="mt-2">
+        <b>Genre: </b>{{data.genres}}
+    </div>
+    <div class="mt-2">
+        <b>Description: </b>{{data.description}}
+    </div>
+</div>
+<div class="modal-footer mt-2">
+    <button type="button" class="btn btn-secondary" (click)="modalRef.close()">
+        Close
+    </button>
+</div>
