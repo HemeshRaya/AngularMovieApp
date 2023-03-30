@@ -1,0 +1,23 @@
+<div style="color: white" [ngStyle]="{'background': 'linear-gradient( rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('+data.bgpath+') no-repeat 0 50%','background-size': 'cover','background-position': 'center','background-repeat': 'no-repeat'}">
+    <div class="modal-header">
+        <h1 *ngIf="data.name==undefined" class="modal-title mb-0" id="exampleModalLabel">{{data.title}}</h1>
+        <h1 #elseblock class="modal-title mb-0" id="exampleModalLabel">{{data.name}}</h1>
+        <!-- <button type="button" class="btn-close" aria-label="Close" (click)="modalRef.close()"></button> -->
+    </div>
+    <div class="modal-body">
+        <div class="imgstyle" style="display: flex; justify-content: center;height: 250px;">
+            <img [src]="data.avatarUrlSqr" alt="poster">
+        </div>
+        <div class="mt-2">
+            <b>Rating: </b>{{data.vote_average}}
+        </div>
+        <div class="mt-2">
+            <b>Description: </b>{{data.overview}}
+        </div>
+    </div>
+    <div class="modal-footer mt-2">
+        <button type="button" class="btn btn-danger" (click)="modalRef.close()">
+            Close
+        </button>
+    </div>
+</div>
