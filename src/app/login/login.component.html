@@ -3,9 +3,11 @@
     <div class="container">
         <div class="row">
           <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-            <div class="card border-0 shadow rounded-3 my-5">
+            <div class="card border-0 shadow rounded-3 my-5" style="background-color: transparent;">
               <div class="card-body p-4 p-sm-5">
-                <h2 class="card-title text-center mb-5 fs-5">Cineverse</h2>
+                <h2 class="card-title text-center mb-5 fs-5">
+                  <h1><span>Cineverse</span></h1>
+                </h2>
                 <form>
                   <div class="form-floating mb-3">
                     <input type="text" class="form-control" id="floatingInput" placeholder="example" [(ngModel)]="userDetails.uname" [ngModelOptions]="{standalone: true}">
@@ -24,7 +26,7 @@
     
                   <div class="form-check mb-3">
                     <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
-                    <label class="form-check-label" for="rememberPasswordCheck">
+                    <label class="form-check-label" for="rememberPasswordCheck" style="color: aliceblue;">
                       Remember password
                     </label>
                   </div>
@@ -33,14 +35,14 @@
                       in</button>
                   </div>
                   <hr class="my-4">
-                  <div class="d-grid mb-2">
+                  <div class="d-grid mb-2 rainbow">
                     <button class="btn btn-google btn-login text-uppercase fw-bold" type="submit">
-                      <i class="fab fa-google me-2"></i> Sign in with Google
+                      <i class="fab fa-google me-2"></i> Sign in with Google <svg width="22px" height="22px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-380.2 274.7 65.7 65.8" id="google"><circle cx="-347.3" cy="307.6" r="32.9" fill="#e0e0e0"></circle><circle cx="-347.3" cy="307.1" r="32.4" fill="#fff"></circle><defs><path id="a" d="M-326.3 303.3h-20.5v8.5h11.8c-1.1 5.4-5.7 8.5-11.8 8.5-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4c-3.9-3.4-8.9-5.5-14.5-5.5-12.2 0-22 9.8-22 22s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z"></path></defs><clipPath id="b"><use overflow="visible" xlink:href="#a"></use></clipPath><path fill="#fbbc05" d="M-370.8 320.3v-26l17 13z" clip-path="url(#b)"></path><defs><path id="c" d="M-326.3 303.3h-20.5v8.5h11.8c-1.1 5.4-5.7 8.5-11.8 8.5-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4c-3.9-3.4-8.9-5.5-14.5-5.5-12.2 0-22 9.8-22 22s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z"></path></defs><clipPath id="d"><use overflow="visible" xlink:href="#c"></use></clipPath><path fill="#ea4335" d="M-370.8 294.3l17 13 7-6.1 24-3.9v-14h-48z" clip-path="url(#d)"></path><defs><path id="e" d="M-326.3 303.3h-20.5v8.5h11.8c-1.1 5.4-5.7 8.5-11.8 8.5-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4c-3.9-3.4-8.9-5.5-14.5-5.5-12.2 0-22 9.8-22 22s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z"></path></defs><clipPath id="f"><use overflow="visible" xlink:href="#e"></use></clipPath><path fill="#34a853" d="M-370.8 320.3l30-23 7.9 1 10.1-15v48h-48z" clip-path="url(#f)"></path><g><defs><path id="g" d="M-326.3 303.3h-20.5v8.5h11.8c-1.1 5.4-5.7 8.5-11.8 8.5-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4c-3.9-3.4-8.9-5.5-14.5-5.5-12.2 0-22 9.8-22 22s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z"></path></defs><clipPath id="h"><use overflow="visible" xlink:href="#g"></use></clipPath><path fill="#4285f4" d="M-322.8 331.3l-31-24-4-3 35-10z" clip-path="url(#h)"></path></g></svg>
                     </button>
                   </div>
-                  <div class="d-grid">
+                  <div class="d-grid rainbow rainbowfb">
                     <button class="btn btn-facebook btn-login text-uppercase fw-bold" type="submit">
-                      <i class="fab fa-facebook-f me-2"></i> Sign in with Facebook
+                      <i class="fab fa-facebook-f me-2"></i> Sign in with Facebook <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 512 500" id="facebook"><path fill="#475a96" d="M0 0h512v500H0z"></path><path fill="#fff" d="M375.717 112.553H138.283c-8.137 0-14.73 6.594-14.73 14.73v237.434c0 8.135 6.594 14.73 14.73 14.73h127.826V276.092h-34.781v-40.28h34.781v-29.705c0-34.473 21.055-53.244 51.807-53.244 14.73 0 27.391 1.097 31.08 1.587v36.026l-21.328.01c-16.725 0-19.963 7.947-19.963 19.609v25.717h39.887l-5.193 40.28h-34.693v103.355h68.012c8.135 0 14.73-6.596 14.73-14.73V127.283c-.001-8.137-6.596-14.73-14.731-14.73z"></path></svg>
                     </button>
                   </div>
                 </form>
