@@ -22,6 +22,9 @@ export class LoginComponent implements OnInit {
               public sessionStorageService:SessionStorageService) { }
 
   ngOnInit(): void {
+    this.openSnackBar({
+      type:'error',message:'username and password are "admin"'
+    },7000);
   }
 
   openSnackBar(data:any,duration:number){

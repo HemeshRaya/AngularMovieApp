@@ -2,10 +2,10 @@
     
     <div class="container">
         <div class="row">
-          <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+          <div class="col-9 col-sm-10 col-md-9 col-lg-6 mx-auto">
             <div class="card border-0 shadow rounded-3 my-5" style="background-color: transparent;">
               <div class="card-body p-4 p-sm-5">
-                <h2 class="card-title text-center mb-5 fs-5">
+                <h2 class="col-9 col-sm-10 col-md-9 col-lg-6 card-title text-center mb-5 fs-5">
                   <h1><span>Cineverse</span></h1>
                 </h2>
                 <form>
@@ -17,7 +17,7 @@
                     <label for="floatingInput">UserName</label>
                   </div>
                   <div class="form-floating mb-3">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" [(ngModel)]="userDetails.pass" [ngModelOptions]="{standalone: true}">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" value="admin" [(ngModel)]="userDetails.pass" [ngModelOptions]="{standalone: true}">
                     <div *ngIf="passShowHide">
                       <small style="color: red;"><b>Password is missing!</b></small>
                     </div>
@@ -37,12 +37,12 @@
                   <hr class="my-4">
                   <div class="d-grid mb-2 rainbow">
                     <button class="btn btn-google btn-login text-uppercase fw-bold" type="submit">
-                      <i class="fab fa-google me-2"></i> Sign in with Google <svg width="22px" height="22px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-380.2 274.7 65.7 65.8" id="google"><circle cx="-347.3" cy="307.6" r="32.9" fill="#e0e0e0"></circle><circle cx="-347.3" cy="307.1" r="32.4" fill="#fff"></circle><defs><path id="a" d="M-326.3 303.3h-20.5v8.5h11.8c-1.1 5.4-5.7 8.5-11.8 8.5-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4c-3.9-3.4-8.9-5.5-14.5-5.5-12.2 0-22 9.8-22 22s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z"></path></defs><clipPath id="b"><use overflow="visible" xlink:href="#a"></use></clipPath><path fill="#fbbc05" d="M-370.8 320.3v-26l17 13z" clip-path="url(#b)"></path><defs><path id="c" d="M-326.3 303.3h-20.5v8.5h11.8c-1.1 5.4-5.7 8.5-11.8 8.5-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4c-3.9-3.4-8.9-5.5-14.5-5.5-12.2 0-22 9.8-22 22s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z"></path></defs><clipPath id="d"><use overflow="visible" xlink:href="#c"></use></clipPath><path fill="#ea4335" d="M-370.8 294.3l17 13 7-6.1 24-3.9v-14h-48z" clip-path="url(#d)"></path><defs><path id="e" d="M-326.3 303.3h-20.5v8.5h11.8c-1.1 5.4-5.7 8.5-11.8 8.5-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4c-3.9-3.4-8.9-5.5-14.5-5.5-12.2 0-22 9.8-22 22s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z"></path></defs><clipPath id="f"><use overflow="visible" xlink:href="#e"></use></clipPath><path fill="#34a853" d="M-370.8 320.3l30-23 7.9 1 10.1-15v48h-48z" clip-path="url(#f)"></path><g><defs><path id="g" d="M-326.3 303.3h-20.5v8.5h11.8c-1.1 5.4-5.7 8.5-11.8 8.5-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4c-3.9-3.4-8.9-5.5-14.5-5.5-12.2 0-22 9.8-22 22s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z"></path></defs><clipPath id="h"><use overflow="visible" xlink:href="#g"></use></clipPath><path fill="#4285f4" d="M-322.8 331.3l-31-24-4-3 35-10z" clip-path="url(#h)"></path></g></svg>
+                      <i class="fab fa-google me-2"></i> Sign <span class="hide">in</span> with <span class="hide" style="padding-right: 3px;">Google</span>  <svg width="22px" height="22px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-380.2 274.7 65.7 65.8" id="google"><circle cx="-347.3" cy="307.6" r="32.9" fill="#e0e0e0"></circle><circle cx="-347.3" cy="307.1" r="32.4" fill="#fff"></circle><defs><path id="a" d="M-326.3 303.3h-20.5v8.5h11.8c-1.1 5.4-5.7 8.5-11.8 8.5-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4c-3.9-3.4-8.9-5.5-14.5-5.5-12.2 0-22 9.8-22 22s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z"></path></defs><clipPath id="b"><use overflow="visible" xlink:href="#a"></use></clipPath><path fill="#fbbc05" d="M-370.8 320.3v-26l17 13z" clip-path="url(#b)"></path><defs><path id="c" d="M-326.3 303.3h-20.5v8.5h11.8c-1.1 5.4-5.7 8.5-11.8 8.5-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4c-3.9-3.4-8.9-5.5-14.5-5.5-12.2 0-22 9.8-22 22s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z"></path></defs><clipPath id="d"><use overflow="visible" xlink:href="#c"></use></clipPath><path fill="#ea4335" d="M-370.8 294.3l17 13 7-6.1 24-3.9v-14h-48z" clip-path="url(#d)"></path><defs><path id="e" d="M-326.3 303.3h-20.5v8.5h11.8c-1.1 5.4-5.7 8.5-11.8 8.5-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4c-3.9-3.4-8.9-5.5-14.5-5.5-12.2 0-22 9.8-22 22s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z"></path></defs><clipPath id="f"><use overflow="visible" xlink:href="#e"></use></clipPath><path fill="#34a853" d="M-370.8 320.3l30-23 7.9 1 10.1-15v48h-48z" clip-path="url(#f)"></path><g><defs><path id="g" d="M-326.3 303.3h-20.5v8.5h11.8c-1.1 5.4-5.7 8.5-11.8 8.5-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4c-3.9-3.4-8.9-5.5-14.5-5.5-12.2 0-22 9.8-22 22s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z"></path></defs><clipPath id="h"><use overflow="visible" xlink:href="#g"></use></clipPath><path fill="#4285f4" d="M-322.8 331.3l-31-24-4-3 35-10z" clip-path="url(#h)"></path></g></svg>
                     </button>
                   </div>
                   <div class="d-grid rainbow rainbowfb">
                     <button class="btn btn-facebook btn-login text-uppercase fw-bold" type="submit">
-                      <i class="fab fa-facebook-f me-2"></i> Sign in with Facebook <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 512 500" id="facebook"><path fill="#475a96" d="M0 0h512v500H0z"></path><path fill="#fff" d="M375.717 112.553H138.283c-8.137 0-14.73 6.594-14.73 14.73v237.434c0 8.135 6.594 14.73 14.73 14.73h127.826V276.092h-34.781v-40.28h34.781v-29.705c0-34.473 21.055-53.244 51.807-53.244 14.73 0 27.391 1.097 31.08 1.587v36.026l-21.328.01c-16.725 0-19.963 7.947-19.963 19.609v25.717h39.887l-5.193 40.28h-34.693v103.355h68.012c8.135 0 14.73-6.596 14.73-14.73V127.283c-.001-8.137-6.596-14.73-14.731-14.73z"></path></svg>
+                      <i class="fab fa-facebook-f me-2"></i> Sign <span class="hide">in</span> with <span class="hide">Facebook</span> <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 512 500" id="facebook"><path fill="#475a96" d="M0 0h512v500H0z"></path><path fill="#fff" d="M375.717 112.553H138.283c-8.137 0-14.73 6.594-14.73 14.73v237.434c0 8.135 6.594 14.73 14.73 14.73h127.826V276.092h-34.781v-40.28h34.781v-29.705c0-34.473 21.055-53.244 51.807-53.244 14.73 0 27.391 1.097 31.08 1.587v36.026l-21.328.01c-16.725 0-19.963 7.947-19.963 19.609v25.717h39.887l-5.193 40.28h-34.693v103.355h68.012c8.135 0 14.73-6.596 14.73-14.73V127.283c-.001-8.137-6.596-14.73-14.731-14.73z"></path></svg>
                     </button>
                   </div>
                 </form>
@@ -50,5 +50,24 @@
             </div>
           </div>
         </div>
+    </div>
+    <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50 d-flex justify-content-center text-center">
+      <!-- <div class="container text-center">
+        <small>Copyright &copy; Cineverse created with <span style="color: white">&hearts;</span>... by Hemesh Raya</small>
+      </div> -->
+      <div class="text-center mx-2">
+        <small>Copyright &copy;2023 All rights reserved <b>|</b> This app is made with <span style="color: white">&hearts;</span>... by Hemesh Raya</small>
       </div>
+
+      <div>
+        <a href="https://www.linkedin.com/in/hemesh-raya-a6746b1a2/" target="_blank" class="text-white me-4">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="22px" width="22px" version="1.1" id="Layer_1" viewBox="0 0 291.319 291.319" xml:space="preserve">
+            <g>
+              <path style="fill:#0E76A8;" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66s-65.21,145.659-145.66,145.659S0,226.1,0,145.66   S65.21,0,145.659,0z"/>
+              <path style="fill:#FFFFFF;" d="M82.079,200.136h27.275v-90.91H82.079V200.136z M188.338,106.077   c-13.237,0-25.081,4.834-33.483,15.504v-12.654H127.48v91.21h27.375v-49.324c0-10.424,9.55-20.593,21.512-20.593   s14.912,10.169,14.912,20.338v49.57h27.275v-51.6C218.553,112.686,201.584,106.077,188.338,106.077z M95.589,100.141   c7.538,0,13.656-6.118,13.656-13.656S103.127,72.83,95.589,72.83s-13.656,6.118-13.656,13.656S88.051,100.141,95.589,100.141z"/>
+            </g>
+            </svg>
+        </a>
+      </div>
+    </footer>
 </div>
